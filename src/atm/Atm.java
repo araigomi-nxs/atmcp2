@@ -38,6 +38,7 @@ public class Atm {
                 System.out.println("Enter pin");
                 if ( accounts[0].login(read.next()) == 1)
                 {
+
                     account_menu(accounts);
                 }
                 else {
@@ -69,7 +70,7 @@ public class Atm {
         System.out.print("Select option: ");
 
 
-
+        navigator = read.nextInt();
         switch ( navigator)
         {
             case 1:
@@ -114,6 +115,7 @@ public class Atm {
 
             }
             default:
+                read.nextLine();
                 account_menu(accounts);
                 break;
 
